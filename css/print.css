@@ -1,0 +1,40 @@
+/**
+*  print.css
+*
+* @link http://www.nelsonsecco.com.br
+* @author  <nelsonseccofilho@gmail.com>
+*
+**/
+
+a, h1,h2,h3,h4,h5,h6, p, span, li{ color: #000 !important; margin-top: 0;}
+div{ margin-bottom: 2.5%}
+ol, p, ul{ margin-bottom: 1%;}
+.page-break  { page-break-before: always; } 
+ul, ol{ list-style: none;}
+.banner { font-size: 100%; font-style: italic; font-weight: bold;}
+a{ font-size: 75%;}
+
+/* Set default width, margin, float, and background.  */
+body, #wrap, #content, #container{ background: transparent  url(none); float: none; margin: 0; padding: 0; width: 100%; }
+
+#wrap{ padding: 2.5%; width: 95%;} 
+
+/* Remove any elements not needed in print. | This would include navigation, ads, sidebars, etc. */
+#nav ul, .noprint, #ftr { display: none;}
+ 
+/* Set body font face, size, and color. | Consider using a serif font for readability. */
+body { font: 1em arial, helvetica, sans-serif; color: #000;}
+ 
+/* Set heading font face, sizes, and color. | Diffrentiate your headings from your body text. | Perhaps use a large sans-serif for distinction. */
+h1,h2,h3,h4,h5,h6, p, span { font-family: arial, helvetica, sans-serif;}
+h1.hdr-logo { font-size: 250%;}
+h1 { font-size: 175%; }
+h2 { font-size: 150%; }
+h3 { font-size: 125%; }
+h4 { font-size: 100%; font-variant: small-caps; }
+h5 { font-size: 75%; }
+h6 { font-size: 50%; font-style: italic; }
+ 
+/* Make hyperlinks more usable.| Ensure links are underlined, and consider appending | the URL to the end of the link for usability. */
+a:link, a:visited { color: #ff9900; text-decoration: underline; }  
+#content a:link:after, #content a:visited:after { content: " (" attr(href) ") ";}
