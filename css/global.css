@@ -25,7 +25,7 @@ legend{color:#000;}
 header, nav, article, section, footer{display: block;}
 
 /* global.css */
-#container{height: auto;margin: 0 auto;position: relative;width: 960px;}
+#container{height: auto;margin: 0 auto;position: relative; width:80%; padding:30px;}
 #hdr{float: left;width: 100%;}
 #content{float: left;width: 100%;}
 #ftr{float: left;width: 100%;}
